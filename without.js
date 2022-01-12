@@ -3,7 +3,7 @@ const mad = String.fromCodePoint(0x1F621);
 
 
 
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1 === arr2) {
     return true;
   }
@@ -25,7 +25,7 @@ const eqArrays = function (arr1, arr2) {
 };
 
 
-const assertArraysEqual = function (a, b) {
+const assertArraysEqual = function(a, b) {
   if (eqArrays(a, b)) {
     console.log(`${happy}${happy}${happy} Assertion Passed: ${a} === ${b}`);
   } else {
@@ -33,7 +33,7 @@ const assertArraysEqual = function (a, b) {
   }
 };
 
-const array = ["1", "2", "3"]
+const array = ["1", "2", "3"];
 const without = function(source, itemsToRemove) {
   let withoutArray = [];
   for (let i = 0; i < source.length; i++) {
@@ -55,7 +55,7 @@ const without = function(source, itemsToRemove) {
   console.log(withoutArray);
   return withoutArray;
 };
-assertArraysEqual(array, ["1", "2", "3"])
+assertArraysEqual(array, ["1", "2", "3"]);
 
 // without([1, 2, 3], [1, 2, 4])
 without(["1", "2", "3"], [1, 2, "3"]);
