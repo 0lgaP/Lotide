@@ -9,13 +9,13 @@ const assertEqual = function(actual, expected) {
 };
 
 const countLetters = function(string) {
-  let cleanString = string.replace(/ /g, '')
+  let cleanString = string.replace(/ /g, '');
 
   const result = {};
  
   for (const value of cleanString) {
     if (result[value]) {
-      result[value] += 1
+      result[value] += 1;
     } else {
       result[value] = 1;
     }
@@ -23,4 +23,4 @@ const countLetters = function(string) {
   return result;
 };
 
-console.log(countLetters("lighthouse in the house"))
+console.log(countLetters("lighthouse in the house"));
