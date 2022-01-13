@@ -8,7 +8,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const findKeyByValue = function (obj, value) {
+const findKeyByValue = function(obj, value) {
  
   const objectKeys = Object.keys(obj);
   const objectValues = Object.values(obj);
@@ -23,6 +23,7 @@ const findKeyByValue = function (obj, value) {
  
 
 const bestTVShowsByGenre = {
+  // eslint-disable-next-line camelcase
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
