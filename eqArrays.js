@@ -36,3 +36,7 @@ const assertArraysEqual = function(a, b) {
 assertArraysEqual([1, 2, 3], [1, 2, 3]);
 assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
 assertArraysEqual(["1", "2", "3"], ["1", "2", 3]);
+assertArraysEqual(["1", "2", "3"], ["1", "23", "3"]);
+assertArraysEqual(["1", "3"], ["1", "23", "3"]);
+assertArraysEqual(["1", "23", "3"], ["1", "23"]);
+assertArraysEqual(["1", "23"], ["1", "23", "fhqwgads"]);
