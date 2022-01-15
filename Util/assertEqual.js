@@ -7,6 +7,6 @@ const assertEqual = function(actual, expected) {
     console.log(`${mad}${mad}${mad} Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
 
+
+module.exports = assertEqual;

@@ -1,35 +1,35 @@
-const happy = String.fromCodePoint(0x1F920);
-const mad = String.fromCodePoint(0x1F621);
+// const happy = String.fromCodePoint(0x1F920);
+// const mad = String.fromCodePoint(0x1F621);
 
-const eqArrays = function(arr1, arr2) {
-  if (arr1 === arr2) {
-    return true;
-  }
-  if (arr1 === null || arr2 === null) {
-    return false;
-  }
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  if (typeof arr1 !== typeof arr2) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+// const eqArrays = function(arr1, arr2) {
+//   if (arr1 === arr2) {
+//     return true;
+//   }
+//   if (arr1 === null || arr2 === null) {
+//     return false;
+//   }
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
+//   if (typeof arr1 !== typeof arr2) {
+//     return false;
+//   }
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
 
 
-const assertArraysEqual = function(a, b) {
-  if (eqArrays(a, b)) {
-    console.log(`${happy}${happy}${happy} Assertion Passed: ${a} === ${b}`);
-  } else {
-    console.log(`${mad}${mad}${mad} Assertion Failed: ${a} !== ${b}`);
-  }
-};
+// const assertArraysEqual = function(a, b) {
+//   if (eqArrays(a, b)) {
+//     console.log(`${happy}${happy}${happy} Assertion Passed: ${a} === ${b}`);
+//   } else {
+//     console.log(`${mad}${mad}${mad} Assertion Failed: ${a} !== ${b}`);
+//   }
+// };
 
 
 const middle = function(array) {
@@ -56,18 +56,18 @@ const middle = function(array) {
 
   //For arrays with odd number of elements, an array containing a single middle element should be returned.
   if (array.length % 2 !== 0) {
-    let indexOdd = Math.floor(array.length / 2)
+    let indexOdd = Math.floor(array.length / 2);
     // console.log(`If ODD is Triggered`);
     // console.log(`index of midle number is ${indexOdd}`);
     middle.push(array[indexOdd]);
-    console.log(middle);
+    // console.log(middle);
     return middle;
   }
 };
-
-middle([1]);
-middle([1, 2]);
-middle([1, 2, 3]);
-middle([1, 2, 3, 4, 5]);
-middle([1, 2, 3, 4]);
-middle([1, 2, 3, 4, 5, 6]);
+module.exports = middle;
+// middle([1]);
+// middle([1, 2]);
+// middle([1, 2, 3]);
+// middle([1, 2, 3, 4, 5]);
+// middle([1, 2, 3, 4]);
+// middle([1, 2, 3, 4, 5, 6]);

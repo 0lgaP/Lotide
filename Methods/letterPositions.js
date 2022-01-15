@@ -1,3 +1,21 @@
+const letterPositions = function(sentence) {
+  const results = {};
+  for (const index in sentence) {
+    //convert the type from string to number using bace 10
+    const letter = parseInt(index, 10);
+    // console.log("This is sentence[letter]: ",  sentence[letter]);
+    // console.log("This is [letter]: ",  [letter]);
+    if (results[sentence[letter]]) {
+      // console.log(`if (results[sentence[letter]]) was triggered, the value of results[sentence[letter]] is: ${results[sentence[letter]]}`);
+      results[sentence[letter]].push(letter);
+    } else {
+      results[sentence[letter]] = [letter];
+    }
+  }  return results;
+};
+// console.log(letterPositions("helllllo"));
+module.exports = letterPositions;
+
 // const happy = String.fromCodePoint(0x1F920);
 // const mad = String.fromCodePoint(0x1F621);
 
@@ -33,23 +51,4 @@
 //   }
 // };
 
-const flatten = function(nestedArray) {
-  let flatArray = [];
-  for (let i = 0; i < nestedArray.length; i++) {
-    if (Array.isArray && nestedArray[i].length >= 1) {
-      // console.log("IF is triggered nestedArray.length is >= 1")
-      for (let j = 0; j < nestedArray[i].length; j++) {
-        // console.log(nestedArray[i][j])
-        flatArray.push(nestedArray[i][j]);
-        // console.log("IF's nested for-loop is triggered, state of flattArray is: " + flatArray)
-      }
-    } else {
-      flatArray.push(nestedArray[i]);
-      // console.log("else is triggered, state of flattArray is: " + flatArray)
-    }
-  }
-  return flatArray;
-};
-
-
-console.log(flatten([1, 2, [3, 4], 5, [6]]));
+// assertArraysEqual(letterPositions("hello").e, [1]);
