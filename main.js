@@ -4,7 +4,7 @@ const eqArrays = require('./Util/eqArrays');
 const assertObjectsEqual = require('./Util/assertObjectsEqual');
 
 
-// list of requirements for non-Util functions
+// list of requirements for Methods
 const sayHelloTo = require('./Methods/myModule');
 const countLetters = require('./Methods/countLetters');
 const countOnly = require('./Methods/countOnly');
@@ -17,21 +17,23 @@ const map = require('./Methods/map');
 const middle = require('./Methods/middle');
 const moduleCheck = require('./Methods/moduleCheck');
 const tail = require('./Methods/tail');
+const takeUntil = require('./Methods/takeUntil');
+const without = require('./Methods/without');
 
-// refactored functions
+
+// 💪 refactored functions
 const assertArrayEqual = (arr1, arr2, boolian) => assertEqual(eqArrays(arr1, arr2), boolian);
 
 
-// export multiple functions
-// module.exports = {    function1,    function2,    function3 }
-
-// Test Cases for Utils
+// 🐱 Test Cases for Utils
+//---------------------------
 // sayHelloTo('Code Queen 👑 !!!');
 // assertEqual("Lighthouse Labs", "Bootcamp");
 // assertArrayEqual([1, 2, 3], [1, 2, 3], true);
 // assertObjectsEqual({ a: "1", b: "2" }, { b: "2", a: "1" });
 
-//Test cases for Methods
+// 🍑 Test cases for Methods
+//---------------------------
 // console.log(countLetters("lighthouse in the house"));
 // console.log(countOnly([
 //   "Karl",
@@ -45,12 +47,12 @@ const assertArrayEqual = (arr1, arr2, boolian) => assertEqual(eqArrays(arr1, arr
 //   "Joe"
 // ], { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false }));
 // console.log(findKey({
-//     "Blue Hill": { stars: 1 },
-//     "Akaleri":   { stars: 3 },
-//     "noma":      { stars: 2 },
-//     "elBulli":   { stars: 3 },
-//     "Ora":       { stars: 2 },
-//     "Akelarre":  { stars: 3 }
+//   "Blue Hill": { stars: 1 },
+//   "Akaleri":   { stars: 3 },
+//   "noma":      { stars: 2 },
+//   "elBulli":   { stars: 3 },
+//   "Ora":       { stars: 2 },
+//   "Akelarre":  { stars: 3 }
 // }, x => x.stars === 2));
 // console.log(findKeyByValue({
 //   sciFi: "The Expanse",
@@ -62,7 +64,9 @@ const assertArrayEqual = (arr1, arr2, boolian) => assertEqual(eqArrays(arr1, arr
 // console.log(letterPositions("helllllo"));
 // console.log(map(["ground", "control", "to", "major", "tom"], word => word[0]));
 // console.log(middle([1, 2, 3, 4, 5]));
-// // console.log(moduleCheck());
+// console.log(moduleCheck());
 // console.log(tail(["Yo Yo", "Lighthouse", "Labs"]));
+// console.log(takeUntil(["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"], x => x === ','));
+// console.log(without([1, 2, 3], [1, 2, 4]));
 
 

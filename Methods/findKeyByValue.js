@@ -10,8 +10,8 @@ const findKeyByValue = function(obj, value) {
     }
   }
 };
-module.exports = findKeyByValue;
 
+// Tests
 // const bestTVShowsByGenre = {
 //   sciFi: "The Expanse",
 //   comedy: "Brooklyn Nine-Nine",
@@ -20,3 +20,5 @@ module.exports = findKeyByValue;
 
 // assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 // assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+
+module.exports = findKeyByValue;

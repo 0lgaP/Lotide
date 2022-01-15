@@ -13,6 +13,7 @@ const countLetters = function(string) {
   return result;
 };
 
+// Test
 // console.log(countLetters("lighthouse in the house"));
 
 module.exports = countLetters;
