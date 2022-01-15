@@ -1,14 +1,8 @@
 const eqArrays = require('./eqArrays');
+const assertEqual = require('./assertEqual')
+
 const happy = String.fromCodePoint(0x1F920);
 const mad = String.fromCodePoint(0x1F621);
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`${happy}${happy}${happy} Assertion Passed: ${actual} === ${actual}`);
-  } else {
-    console.log(`${mad}${mad}${mad} Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 
 const eqObjects = function(object1, object2) {
   const obj1Keys = Object.keys(object1);
@@ -36,16 +30,14 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-
-
-
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-const abc = { a: "1", b: "2", c: "3" };
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-const cd2 = { c: "1", d: ["2", 3, 4] };
-const ab2 = { a: "1", b: "aarrvdrk" };
+// Tests
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// const abc = { a: "1", b: "2", c: "3" };
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+// const ab2 = { a: "1", b: "aarrvdrk" };
 
 // assertEqual(eqObjects(ab, ba), true);
 // assertEqual(eqObjects(ab, abc), false);

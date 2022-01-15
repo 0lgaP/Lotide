@@ -69,4 +69,4 @@ const assertArrayEqual = (arr1, arr2, boolian) => assertEqual(eqArrays(arr1, arr
 // console.log(takeUntil(["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"], x => x === ','));
 // console.log(without([1, 2, 3], [1, 2, 4]));
 
-
+module.exports = assertArrayEqual;
