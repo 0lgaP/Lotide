@@ -1,8 +1,8 @@
-const chai = require('chai');
+const assert = require('chai').assert;
 // list of requirements from Util
-const assertArrayEqual = require('/home/olga/lighthouse/w1/lotide/main');
+const assertArrayEqual = require('../Util/assertArrayEqual');
 // list of requirements form Methods
-const tail = require('/home/olga/lighthouse/w1/lotide/Methods/tail');
+const tail = require('../Methods/tail');
 
 
 // 🐱 Test Cases for Tail

@@ -1,5 +1,6 @@
-const middle = require(`/home/olga/lighthouse/w1/lotide/Methods/middle`);
-const assertArrayEqual = require(`/home/olga/lighthouse/w1/lotide/Util/assertArrayEqual`);
+const assert = require('chai').assert;
+const middle = require(`../Methods/middle`);
+const assertArrayEqual = require(`../Util/assertArrayEqual`);
 
 // 🐱 Test Cases for Middle
 //-------------------------

@@ -1,5 +1,7 @@
-const assertEqual = require(`/home/olga/lighthouse/w1/lotide/Util/assertEqual`);
-const eqArrays = require(`/home/olga/lighthouse/w1/lotide/Util/eqArrays`);
+const assert = require('chai').assert;
+const assertEqual = require(`../Util/assertEqual`);
+const eqArrays = require(`../Util/eqArrays`);
+
 
 // 🐱 Test Cases for eqArrays
 //-----------------------------------
