@@ -4,7 +4,6 @@ const middle = function(array) {
   //For arrays with one or two elements, there is no middle. Return an empty array.
   if (array.length <= 2) {
     // console.log(`The array is smaller than length 2:`)
-    console.log(middle);
     return middle;
   }
 
@@ -16,7 +15,6 @@ const middle = function(array) {
     // console.log(`index1: ${index1} || index 2: ${index2}`)
     middle.push(array[index2]);
     middle.push(array[index1]);
-    console.log(middle);
     return middle;
   }
 
@@ -29,14 +27,8 @@ const middle = function(array) {
     // console.log(middle);
     return middle;
   }
+
 };
 
-//Tests
-// middle([1]);
-// middle([1, 2]);
-// middle([1, 2, 3]);
-// middle([1, 2, 3, 4, 5]);
-// middle([1, 2, 3, 4]);
-// middle([1, 2, 3, 4, 5, 6]);
 
 module.exports = middle;
