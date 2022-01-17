@@ -3,7 +3,8 @@ const eqArrays = require(`/home/olga/lighthouse/w1/lotide/Util/eqArrays`);
 
 const assertArraysEqual = (arr1, arr2, boolian) => assertEqual(eqArrays(arr1, arr2), boolian);
 
-// Tests
+// 🐱 Test Cases for assertArrayEqual
+//-----------------------------------
 console.log(assertArraysEqual([1, 2, 3], [1, 2, 3], true)); //pass
 console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", "3"], true)); //pass
 console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", 3], false)); //pass

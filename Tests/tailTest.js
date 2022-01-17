@@ -7,6 +7,5 @@ const tail = require('/home/olga/lighthouse/w1/lotide/Methods/tail');
 
 // 🐱 Test Cases for Tail
 //---------------------------
-
 console.log(assertArrayEqual(tail(["Yo Yo", "Lighthouse", "Labs"]), [ 'Lighthouse', 'Labs' ], true)); //pass
 console.log(assertArrayEqual(tail(["Yo Yo", "Lighthouse", "Labs"]), ["Yo Yo", "Lighthouse"], false)); //pass
