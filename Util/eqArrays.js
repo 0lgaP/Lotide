@@ -19,23 +19,4 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-const happy = String.fromCodePoint(0x1F920);
-const mad = String.fromCodePoint(0x1F621);
-const assertArraysEqual = function(a, b) {
-  if (eqArrays(a, b)) {
-    console.log(`${happy}${happy}${happy} Assertion Passed: ${a} === ${b}`);
-  } else {
-    console.log(`${mad}${mad}${mad} Assertion Failed: ${a} !== ${b}`);
-  }
-};
-
-// Tests
-// assertArraysEqual([1, 2, 3], [1, 2, 3]);
-// assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
-// assertArraysEqual(["1", "2", "3"], ["1", "2", 3]);
-// assertArraysEqual(["1", "2", "3"], ["1", "23", "3"]);
-// assertArraysEqual(["1", "3"], ["1", "23", "3"]);
-// assertArraysEqual(["1", "23", "3"], ["1", "23"]);
-// assertArraysEqual(["1", "23"], ["1", "23", "fhqwgads"]);
-
 module.exports = eqArrays;

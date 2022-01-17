@@ -5,5 +5,7 @@ const tail = function(array) {
 // Tests
 // const words = ["Yo Yo", "Lighthouse", "Labs"];
 // const result = tail(words);
+// console.log(result)
+console.log(tail(["Yo Yo", "Lighthouse", "Labs"]));
 
 module.exports = tail;

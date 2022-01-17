@@ -1,3 +1,5 @@
+const chai = require('chai');
+
 // list of requirements for Util
 const assertEqual = require('./Util/assertEqual');
 const eqArrays = require('./Util/eqArrays');
@@ -31,6 +33,13 @@ const assertArrayEqual = (arr1, arr2, boolian) => assertEqual(eqArrays(arr1, arr
 // assertEqual("Lighthouse Labs", "Bootcamp");
 // assertArrayEqual([1, 2, 3], [1, 2, 3], true);
 // assertObjectsEqual({ a: "1", b: "2" }, { b: "2", a: "1" });
+console.log(assertArraysEqual([1, 2, 3], [1, 2, 3], true)); //pass
+console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", "3"], true)); //pass
+console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", 3], false)); //pass
+console.log(assertArraysEqual(["1", "2", "3"], ["1", "23", "3"], false)); //pass
+console.log(assertArraysEqual(["1", "3"], ["1", "23", "3"], false)); //pass
+console.log(assertArraysEqual(["1", "23", "3"], ["1", "23"], false)); //pass
+console.log(assertArraysEqual(["1", "23"], ["1", "23", "fhqwgads"], false)); //pass
 
 // 🍑 Test cases for Methods
 //---------------------------
