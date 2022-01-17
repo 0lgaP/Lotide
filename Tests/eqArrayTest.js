@@ -15,6 +15,8 @@ describe("eqArrays", () => {
   });
 });
 
+// 🐱 Test Cases for assertEqual
+//-----------------------------------
 describe("assertEqual", () => {
   it(`returns assertion passed false === false`, () => {
     assert.strictEqual(assertEqual(eqArrays(["1", "23"], ["1", "23", "fhqwgads"]), false), `🤠🤠🤠 Assertion Passed: false === false`);

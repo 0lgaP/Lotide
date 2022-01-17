@@ -19,8 +19,4 @@ const without = function(source, itemsToRemove) {
   return withoutArray;
 };
 
-// Tests
-// without([1, 2, 3], [1, 2, 4])
-// without(["1", "2", "3"], [1, 2, "3"]);
-
 module.exports = without;

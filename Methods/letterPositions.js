@@ -14,7 +14,4 @@ const letterPositions = function(sentence) {
   }  return results;
 };
 
-// Test
-// console.log(letterPositions("helllllo"));
-
 module.exports = letterPositions;
